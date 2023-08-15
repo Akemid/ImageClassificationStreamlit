@@ -9,6 +9,12 @@ from io import BytesIO
 # Create application title and file uploader widget.
 st.title("OpenCV Deep Learning based Image Classification - DenseNet 201")
 
+hide_github_icon ="""
+<style>
+ .css-ztfqz8.ef3psqc4 { display: none; }
+</style>
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 @st.cache_resource()
 def load_model():
